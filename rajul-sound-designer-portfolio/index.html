@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="hi-IN" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajul Barman — Sound Designer, Music Producer & Video Editor Portfolio</title>
+    <meta name="description" content="Official Portfolio of Rajul Barman - Sound Designer, Music Producer & Video Editor specializing in Audio Stories, Music Production, Foley, and Video Post-Production.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-dark: #07090e;
+            --bg-card: #0e1320;
+            --bg-card-hover: #151c2e;
+            --bg-card-glass: rgba(14, 19, 32, 0.85);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-active: rgba(0, 242, 254, 0.4);
+            
+            --primary: #00f2fe;
+            --primary-glow: rgba(0, 242, 254, 0.35);
+            --secondary: #7f00ff;
+            --secondary-glow: rgba(127, 0, 255, 0.35);
+            --accent: #ff007f;
+            
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            
+            --font-main: 'Outfit', sans-serif;
+            --font-code: 'JetBrains Mono', monospace;
+            
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 24px;
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(127, 0, 255, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 85% 65%, rgba(0, 242, 254, 0.12) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-dark);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary);
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, #4facfe 40%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            background: rgba(0, 242, 254, 0.08);
+            color: var(--primary);
+            border: 1px solid rgba(0, 242, 254, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .badge-purple {
+            background: rgba(127, 0, 255, 0.1);
+            color: #b16cff;
+            border-color: rgba(127, 0, 255, 0.25);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: var(--radius-md);
+            font-family: var(--font-main);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            border: none;
+            outline: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, #00b4d8 100%);
+            color: #040914;
+            box-shadow: 0 4px 20px var(--primary-glow);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 242, 254, 0.5);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(10px);
+        }
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 48px);
+            max-width: 1240px;
+            z-index: 1000;
+            background: var(--bg-card-glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-color);
+            border-radius: 100px;
+            padding: 12px 24px;
+            transition: var(--transition);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 800;
+            font-size: 1.25rem;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-size: 1.1rem;
+            box-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.92rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        /* Hero Section & Spectrum Analyzer Animation Card */
+        .hero {
+            padding-top: 160px;
+            padding-bottom: 90px;
+            position: relative;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .hero-name {
+            display: flex;
+            flex-direction: column;
+            line-height: 0.92;
+            font-size: 4.8rem;
+            font-weight: 900;
+            margin-top: 16px;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .hero-name .first-name {
+            display: block;
+            white-space: nowrap;
+        }
+
+        .hero-name .last-name {
+            display: block;
+            white-space: nowrap;
+            color: var(--text-main);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            max-width: 580px;
+            font-weight: 350;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .hero-stats {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text-main);
+            font-family: var(--font-code);
+        }
+        .stat-item p {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            margin-bottom: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Hero Right-Side Spectrum Analyzer Card */
+        .visualizer-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+
+        .visualizer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+
+        .console-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .console-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-code);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #10b981;
+            box-shadow: 0 0 10px #10b981;
+            animation: pulse-dot 1.5s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        #heroCanvas {
+            width: 100%;
+            height: 220px;
+            background: #04060b;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255,255,255,0.05);
+            display: block;
+        }
+
+        .sound-trigger-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .trigger-btn {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .trigger-btn:hover {
+            background: var(--primary);
+            color: #000;
+            font-weight: 600;
+            border-color: var(--primary);
+        }
+
+        /* Section Headings */
+        .section-header {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 60px auto;
+        }
+
+        .section-header h2 {
+            font-size: 2.6rem;
+            font-weight: 800;
+            margin-top: 12px;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* What I Do Section */
+        .what-i-do-section {
+            padding: 90px 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(14, 19, 32, 0.5) 50%, transparent 100%);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 28px;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-active);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 242, 254, 0.12);
+        }
+
+        .service-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(0, 242, 254, 0.08);
+            border: 1px solid rgba(0, 242, 254, 0.2);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            line-height: 1.5;
+        }
+
+        /* Selected Audio Stories Section */
+        .projects-section {
+            padding: 90px 0;
+            position: relative;
+        }
+
+        .filter-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary);
+            color: #000;
+            border-color: var(--primary);
+            font-weight: 600;
+            box-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 28px;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--border-active);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4), 0 0 24px rgba(0, 242, 254, 0.15);
+        }
+
+        /* Direct HTML5 & Drive Iframe Media Container (Landscape 16:9) */
+        .video-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            min-height: 260px;
+            height: 260px;
+            background: #04060b;
+            border-bottom: 1px solid var(--border-color);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Portrait (9:16 Shorts / Reels) Video Container */
+        .video-container.portrait-container {
+            aspect-ratio: 9 / 16;
+            height: 420px;
+            min-height: 420px;
+            background: #000;
+            margin: 0 auto;
+        }
+
+        .video-container audio {
+            width: 90%;
+            accent-color: var(--primary);
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* Click to Play Overlay for Google Drive Videos */
+        .play-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(4, 6, 11, 0.95));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 2;
+        }
+
+        .play-overlay:hover {
+            background: linear-gradient(135deg, rgba(0, 242, 254, 0.25), rgba(127, 0, 255, 0.35));
+        }
+
+        .play-overlay .play-icon {
+            font-size: 2rem;
+            color: var(--primary);
+            background: rgba(0, 0, 0, 0.7);
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--primary);
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+            transition: transform 0.3s ease;
+            padding-left: 4px;
+        }
+
+        .play-overlay:hover .play-icon {
+            transform: scale(1.15);
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .play-overlay span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-light);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .project-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .project-meta-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 6px;
+            gap: 8px;
+        }
+
+        .drive-link-badge {
+            font-size: 0.75rem;
+            color: var(--primary);
+            background: rgba(0, 242, 254, 0.1);
+            border: 1px solid var(--border-color);
+            padding: 3px 8px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        .drive-link-badge:hover {
+            background: var(--primary);
+            color: #000;
+            border-color: var(--primary);
+        }
+
+        .project-meta-type {
+            font-family: var(--font-code);
+            font-size: 0.8rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .project-role-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            padding: 10px 14px;
+            margin-bottom: 16px;
+        }
+
+        .role-label {
+            font-family: var(--font-code);
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .role-text {
+            font-size: 0.88rem;
+            color: #e2e8f0;
+            font-weight: 500;
+        }
+
+        .software-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: auto;
+        }
+
+        .sw-tag {
+            font-family: var(--font-code);
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: rgba(127, 0, 255, 0.1);
+            border: 1px solid rgba(127, 0, 255, 0.25);
+            color: #c084fc;
+        }
+
+        /* Soundboard Section */
+        .soundboard-section {
+            padding: 90px 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(14, 19, 32, 0.6) 50%, transparent 100%);
+        }
+
+        .soundboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .pad-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 24px 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            cursor: pointer;
+            transition: var(--transition);
+            user-select: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pad-btn:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 242, 254, 0.2);
+        }
+
+        .pad-btn:active, .pad-btn.playing {
+            transform: scale(0.95);
+            border-color: var(--primary);
+            box-shadow: 0 0 30px var(--primary);
+        }
+
+        .pad-icon {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .pad-label {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        .pad-type {
+            font-family: var(--font-code);
+            font-size: 0.72rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+        }
+
+        /* Experience Timeline */
+        .experience-section {
+            padding: 90px 0;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 860px;
+            margin: 0 auto;
+            padding-left: 30px;
+            border-left: 2px solid var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 48px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -39px;
+            top: 4px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 15px var(--primary);
+            border: 3px solid var(--bg-dark);
+        }
+
+        .timeline-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            transition: var(--transition);
+        }
+
+        .timeline-date {
+            font-family: var(--font-code);
+            font-size: 0.85rem;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .timeline-role {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .timeline-company {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+            font-weight: 500;
+        }
+
+        .timeline-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Education & Certs */
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .edu-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            transition: var(--transition);
+        }
+
+        .edu-year {
+            font-family: var(--font-code);
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .edu-degree {
+            font-weight: 700;
+            font-size: 1.15rem;
+            margin-bottom: 4px;
+        }
+
+        .edu-school {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, rgba(14, 19, 32, 0.9), rgba(20, 28, 46, 0.9));
+            border: 1px solid var(--border-active);
+            border-radius: var(--radius-lg);
+            padding: 48px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            box-shadow: 0 20px 60px rgba(0, 242, 254, 0.1);
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        .contact-info p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .c-link-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .c-link-item:hover {
+            color: var(--primary);
+            transform: translateX(6px);
+        }
+
+        .c-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(0, 242, 254, 0.1);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            border: 1px solid rgba(0, 242, 254, 0.2);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 14px 18px;
+            color: var(--text-main);
+            font-family: var(--font-main);
+            font-size: 1rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--primary);
+            background: rgba(255,255,255,0.06);
+            box-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 36px 0;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 992px) {
+            .hero-grid { grid-template-columns: 1fr; }
+            .hero-name { font-size: 3.8rem; }
+            .contact-card { grid-template-columns: 1fr; padding: 32px; }
+            .nav-links { display: none; }
+        }
+
+        @media (max-width: 600px) {
+            .hero-name { font-size: 3.2rem; }
+            .hero-buttons { flex-direction: column; align-items: stretch; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr; }
+            .soundboard-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+                <span>RAJUL BARMAN</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#services">What I Do</a></li>
+                <li><a href="#stories">Audio Stories</a></li>
+                <li><a href="#video-editing">Video Editing</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.9rem;">
+                    Hire Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="badge">
+                        <i class="fa-solid fa-compact-disc"></i> Sound Designer • Music Producer • Video Editor
+                    </div>
+                    
+                    <h1 class="hero-name">
+                        <span class="first-name text-gradient">Rajul</span>
+                        <span class="last-name">Barman</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Crafting immersive audio storytelling, custom Foley, dialogue editing, background scores, and high-impact video post-production & editing for <strong>Pocket FM</strong>, <strong>Katha Ghar</strong>, documentaries, and promo trailers.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#stories" class="btn btn-primary">
+                            <i class="fa-solid fa-play"></i> Audio Stories
+                        </a>
+                        <a href="#video-editing" class="btn btn-outline">
+                            <i class="fa-solid fa-video"></i> Video Portfolio
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>2500+</h3>
+                            <p>Videos Edited</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>150+</h3>
+                            <p>Audio Stories</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>AAFT</h3>
+                            <p>Music Production</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visualizer Console Card (SPECTRUM FREQUENCY BARS ANIMATION NEXT TO NAME) -->
+                <div class="visualizer-card">
+                    <div class="console-header">
+                        <div class="console-title">
+                            <span class="status-dot"></span>
+                            <span>LIVE SPECTRUM ANALYZER</span>
+                        </div>
+                        <div style="font-family: var(--font-code); font-size: 0.75rem; color: var(--primary);">
+                            48.0 kHz / 24-Bit
+                        </div>
+                    </div>
+                    
+                    <canvas id="heroCanvas"></canvas>
+
+                    <div class="sound-trigger-bar">
+                        <span style="font-size: 0.85rem; color: var(--text-muted);">Audition SFX Signals:</span>
+                        <div style="display: flex; gap: 8px;">
+                            <button class="trigger-btn" onclick="playSynthSound('subdrop')">
+                                <i class="fa-solid fa-bolt"></i> Sub Drop
+                            </button>
+                            <button class="trigger-btn" onclick="playSynthSound('whoosh')">
+                                <i class="fa-solid fa-wind"></i> Whoosh
+                            </button>
+                            <button class="trigger-btn" onclick="playSynthSound('ambient')">
+                                <i class="fa-solid fa-atom"></i> Drone
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / What I Do Section -->
+    <section class="what-i-do-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge badge-purple">Core Expertise</div>
+                <h2>What I Do</h2>
+                <p>Comprehensive sound design, music production, and video post-production services engineered for storytelling and broadcast precision.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+                    <h3>Video Editing & Assembly</h3>
+                    <p>High-impact video editing, seamless scene cuts, rhythmic story pacing, subtitle graphics, and multi-cam assembly in Premiere Pro.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-clapperboard"></i></div>
+                    <h3>Documentary Post-Production</h3>
+                    <p>Archival footage integration, narrative arc pacing, interview cutting, sound sync, and broadcast-ready documentary exports.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>Shorts & Reels Editing</h3>
+                    <p>Fast-paced teaser edits, dynamic captions, motion text graphics, audio-visual beat sync, and high-retention social media reels.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Color Grading & Tuning</h3>
+                    <p>Cinematic color grading, LUT application, skin tone correction, contrast balancing, and visual mood enhancement.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-comment-dots"></i></div>
+                    <h3>Dialogue Editing</h3>
+                    <p>Clean vocal edits, mouth click removal, pacing alignment, and vocal clarity tuning for podcasts, audiobooks, and audio dramas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Sound Design</h3>
+                    <p>Creating custom synthesized audio textures, cinematic braams, sci-fi risers, impacts, and unique sonic identities.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-shoe-prints"></i></div>
+                    <h3>Foley Creation</h3>
+                    <p>Custom recorded and synthesized footsteps, cloth movement, props, and organic physical interaction sounds.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-tree"></i></div>
+                    <h3>Ambience Design</h3>
+                    <p>Multi-layered 3D environmental soundscapes, outdoor weather, room tones, and atmospheric immersion for audio stories.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-compact-disc"></i></div>
+                    <h3>Music Production</h3>
+                    <p>Full song production, beat arrangement, montage themes, and sound synthesis engineered in FL Studio.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>Audio Mixing & Final Mix</h3>
+                    <p>Frequency balancing, dynamic range compression, loudness normalization (LUFS), spatial panning, and final master exports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Audio Stories Section (DIRECT LOCAL MEDIA FOLDER ENGINE) -->
+    <section class="projects-section" id="stories">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Sonic Showcase</div>
+                <h2>Selected Audio Stories</h2>
+                <p>Press play on any card to listen to Rajul's direct high-quality audio mixing, Foley, and sound design.</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterStories('all', event)">All Stories</button>
+                <button class="filter-btn" onclick="filterStories('audioseries', event)">Audio Series & Drama</button>
+                <button class="filter-btn" onclick="filterStories('scifi', event)">Sci-Fi & Action</button>
+                <button class="filter-btn" onclick="filterStories('video', event)">Video Stories & Promos</button>
+                <button class="filter-btn" onclick="filterStories('international', event)">International Audio</button>
+            </div>
+
+            <div class="projects-grid" id="storiesGrid">
+                
+                <!-- 1. Sci-Fi Series (Pocket FM) -->
+                <div class="project-card" data-category="scifi">
+                    <div class="video-container">
+                        <audio controls preload="metadata">
+                            <source src="media/sci fi series(Pocket fm).mp3" type="audio/mpeg">
+                            Your browser does not support audio playback.
+                        </audio>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Pocket FM • Sci-Fi Universe</span>
+                        </div>
+                        <h3 class="project-title">Sci-Fi Series</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Immersive Sound Design • Sub Bass • Risers</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">FL Studio</span>
+                            <span class="sw-tag">Synth Design</span>
+                            <span class="sw-tag">Trailer FX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Hindi Family Drama -->
+                <div class="project-card" data-category="audioseries">
+                    <div class="video-container">
+                        <audio controls preload="metadata">
+                            <source src="media/Hindi Family drama.mp3" type="audio/mpeg">
+                            Your browser does not support audio playback.
+                        </audio>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Pocket FM • Audio Drama</span>
+                        </div>
+                        <h3 class="project-title">Hindi Family Drama</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Dialogue Editing • Foley • Final Mix</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">FL Studio</span>
+                            <span class="sw-tag">Adobe Audition</span>
+                            <span class="sw-tag">Foley FX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. English Sports Episode -->
+                <div class="project-card" data-category="international">
+                    <div class="video-container">
+                        <audio controls preload="metadata">
+                            <source src="media/english Series Ep.mp3" type="audio/mpeg">
+                            Your browser does not support audio playback.
+                        </audio>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Pocket FM • English Localization</span>
+                        </div>
+                        <h3 class="project-title">English Sports Episode</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Dialogue Editing • Crowd Ambience • Mixing</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">FL Studio</span>
+                            <span class="sw-tag">Stadium Ambience</span>
+                            <span class="sw-tag">Vocal EQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. French Episode -->
+                <div class="project-card" data-category="international">
+                    <div class="video-container">
+                        <audio controls preload="metadata">
+                            <source src="media/french(Pocket fm).mp3" type="audio/mpeg">
+                            Your browser does not support audio playback.
+                        </audio>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Pocket FM • French Localization</span>
+                        </div>
+                        <h3 class="project-title">French Episode</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Vocal Processing • Dialogue Sync • Master</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">FL Studio</span>
+                            <span class="sw-tag">Vocal Clean</span>
+                            <span class="sw-tag">Audio Sync</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Blouse (Manto) -->
+                <div class="project-card" data-category="audioseries">
+                    <div class="video-container">
+                        <audio controls preload="metadata">
+                            <source src="media/Blouse (Manto).mp3" type="audio/mpeg">
+                            Your browser does not support audio playback.
+                        </audio>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Hamara FM • Manto Adaptation</span>
+                        </div>
+                        <h3 class="project-title">Blouse (Manto)</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Foley • Ambience Design • Background Score</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">FL Studio</span>
+                            <span class="sw-tag">Emotional Score</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. AI Video Story (Dashverse) -->
+                <div class="project-card" data-category="video">
+                    <div class="video-container">
+                        <audio controls preload="metadata">
+                            <source src="media/video story ai.mp3" type="audio/mpeg">
+                            Your browser does not support audio playback.
+                        </audio>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Dashverse • AI Video Production</span>
+                        </div>
+                        <h3 class="project-title">AI Video Story</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Video Editing • Sound Design • Audio Sync</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">Adobe Premiere Pro</span>
+                            <span class="sw-tag">CapCut</span>
+                            <span class="sw-tag">Sound Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Vairagi -->
+                <div class="project-card" data-category="audioseries">
+                    <div class="video-container">
+                        <audio controls preload="metadata">
+                            <source src="media/VAIRAGI (Jaishankar Prashad).mp3" type="audio/mpeg">
+                            Your browser does not support audio playback.
+                        </audio>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Literary Drama • Jaishankar Prasad</span>
+                        </div>
+                        <h3 class="project-title">Vairagi</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Foley • Background Score • Final Mix</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">FL Studio</span>
+                            <span class="sw-tag">Emotional Score</span>
+                            <span class="sw-tag">Foley</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Prithviraj Chauhan -->
+                <div class="project-card" data-category="audioseries">
+                    <div class="video-container">
+                        <audio controls preload="metadata">
+                            <source src="media/prathviraj chuhan(Pocket fm).mp3" type="audio/mpeg">
+                            Your browser does not support audio playback.
+                        </audio>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Pocket FM • Historical Epic</span>
+                        </div>
+                        <h3 class="project-title">Prithviraj Chauhan</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Battle SFX • War Ambience • Mixing</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">FL Studio</span>
+                            <span class="sw-tag">War Ambience</span>
+                            <span class="sw-tag">Foley</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. YouTube Sound Design -->
+                <div class="project-card" data-category="video">
+                    <div class="video-container">
+                        <iframe src="https://drive.google.com/file/d/1eBPuWK7SpKp3FSUml89EMUtS1a74-4Aq/preview" referrerpolicy="no-referrer" allow="autoplay; fullscreen" allowfullscreen frameborder="0" loading="lazy" title="YouTube Sound Design Reel"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">YouTube • Sound Design Reel</span>
+                        </div>
+                        <h3 class="project-title">YouTube Sound Design</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Sound Design • SFX • Final Mix</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">FL Studio</span>
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">SFX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Dragon King -->
+                <div class="project-card" data-category="video">
+                    <div class="video-container">
+                        <iframe src="https://drive.google.com/file/d/1jfHfmy9yarJBN8FBhm5sbC5mxLkG1nsO/preview" referrerpolicy="no-referrer" allow="autoplay; fullscreen" allowfullscreen frameborder="0" loading="lazy" title="Dragon King — Dashverse"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Dashverse • Animated Series</span>
+                        </div>
+                        <h3 class="project-title">Dragon King</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Sound Design • Foley • Video Sync</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">FL Studio</span>
+                            <span class="sw-tag">Foley</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Khooni -->
+                <div class="project-card" data-category="audioseries">
+                    <div class="video-container">
+                        <audio controls preload="metadata">
+                            <source src="media/Khooni (RajKamal Chaudhary).mp3" type="audio/mpeg">
+                            Your browser does not support audio playback.
+                        </audio>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Literary Drama • RajKamal Chaudhary</span>
+                        </div>
+                        <h3 class="project-title">Khooni</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Sound Design • Dark Ambience • Final Mix</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">FL Studio</span>
+                            <span class="sw-tag">Spectral Clean</span>
+                            <span class="sw-tag">Dark Ambience</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Featured Sound Production -->
+                <div class="project-card" data-category="audioseries">
+                    <div class="video-container">
+                        <iframe src="https://drive.google.com/file/d/1FgFHGxTLW_Lese21yinHjLjZv6NlOj7u/preview" referrerpolicy="no-referrer" allow="autoplay; fullscreen" allowfullscreen frameborder="0" loading="lazy" title="Featured Sound Production"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Audio Story • Sound Design Showcase</span>
+                        </div>
+                        <h3 class="project-title">Featured Sound Production</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Sound Design • Foley • Dialogue Mix • Final Master</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">FL Studio</span>
+                            <span class="sw-tag">Adobe Audition</span>
+                            <span class="sw-tag">Sound Design</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated Video Editing & Post-Production Section -->
+    <section class="projects-section" id="video-editing" style="padding-top: 50px;">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge badge-purple"><i class="fa-solid fa-film"></i> 2500+ Videos Edited • Visual Portfolio</div>
+                <h2>Video Editing & Post-Production</h2>
+                <p>Over 2500+ videos edited including feature documentary cuts, short-form reels, brand commercials, AI animated series, and promo trailers.</p>
+            </div>
+
+            <!-- Video Category Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterVideos('all', event)">All Videos</button>
+                <button class="filter-btn" onclick="filterVideos('documentary', event)">Documentaries</button>
+                <button class="filter-btn" onclick="filterVideos('shorts', event)">Shorts & Reels</button>
+                <button class="filter-btn" onclick="filterVideos('ai_promo', event)">Promos & Animated</button>
+            </div>
+
+            <!-- Static Grid for Video Editing Projects -->
+            <div class="projects-grid" id="videoEditingGrid">
+                <!-- 1. Brand Commercial & Ad Video (Advertisement) -->
+                <div class="project-card" data-category="shorts">
+                    <div class="video-container portrait-container">
+                        <iframe src="https://drive.google.com/file/d/1ovioIOLDRjGXIbhM1dg1gakEf7CR2o4y/preview" width="100%" height="450" allow="autoplay; encrypted-media" allowfullscreen title="Brand Commercial & Ad Video"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Brand Ads • Performance Digital Marketing</span>
+                        </div>
+                        <h3 class="project-title">Brand Commercial & Ad Video</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Digital Marketing Ad Video • High-Conversion Cuts • Motion Titles & Subtitles</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">CapCut</span>
+                            <span class="sw-tag">Brand Ads</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. AI Video & Story Reel #1 (AI Generated Video) -->
+                <div class="project-card" data-category="ai_promo">
+                    <div class="video-container portrait-container">
+                        <iframe src="https://drive.google.com/file/d/159ln0ItPLsa1WEdqeU9C3z84tx5rqTj8/preview" width="100%" height="450" allow="autoplay; encrypted-media" allowfullscreen title="AI Video & Story Generation Reel #1"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">AI Content • Visual Story Generation</span>
+                        </div>
+                        <h3 class="project-title">AI Video & Story Generation Reel #1</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">AI Visual Generation (Prompt to Video) • Story Arc Assembly • Audio Sync</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">AI Generators</span>
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">CapCut</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. AI Video & Story Reel #2 -->
+                <div class="project-card" data-category="ai_promo">
+                    <div class="video-container portrait-container">
+                        <iframe src="https://drive.google.com/file/d/1hfwYLtsBP4GrnR7Oh-Vk_syMUoM-cNdB/preview" width="100%" height="450" allow="autoplay; encrypted-media" allowfullscreen title="AI Video & Story Generation Reel #2"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">AI Content • Generated Story Visuals</span>
+                        </div>
+                        <h3 class="project-title">AI Video & Story Generation Reel #2</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">AI Visual Generation (Prompt to Video) • Story Arc Assembly • Sound & FX</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">AI Generators</span>
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">CapCut</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Travel Reel -->
+                <div class="project-card" data-category="shorts">
+                    <div class="video-container portrait-container">
+                        <iframe src="https://drive.google.com/file/d/16EXmRpWeG1-FG0G6ZpJVrGbJogZC6ImD/preview" width="315" height="560" allow="autoplay; encrypted-media" allowfullscreen title="Travel Reel Social Media Content"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Travel Content • Social Media Reel</span>
+                        </div>
+                        <h3 class="project-title">Travel Reel Social Media Content</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Travel Video Edit • Rhythmic Pacing • Color Tuning • Dynamic Transitions</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">CapCut</span>
+                            <span class="sw-tag">Travel Reel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Podcast Video (Podcast Editing) -->
+                <div class="project-card" data-category="shorts">
+                    <div class="video-container portrait-container">
+                        <iframe src="https://drive.google.com/file/d/18-b_L4J-PAMFXD090CBh0WTyzcHTfCZJ/preview" width="100%" height="450" allow="autoplay; encrypted-media" allowfullscreen title="Podcast & Talk Show Video"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Show Interviews • Talk Shows</span>
+                        </div>
+                        <h3 class="project-title">Podcast & Talk Show Video</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Multi-Cam Podcast Video Edit • Dialogue Assembly • Dynamic Subtitles & Captions</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">CapCut</span>
+                            <span class="sw-tag">Subtitles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Cinematic Trailer (Trailer / Promo) -->
+                <div class="project-card" data-category="ai_promo">
+                    <div class="video-container">
+                        <iframe src="https://drive.google.com/file/d/1uMtDYGvy6kGxd9_8CbO6HdjSW1KRNMHE/preview" width="100%" height="450" allow="autoplay; encrypted-media" allowfullscreen title="Cinematic Trailer"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Promo Teaser • Sound-Driven Edit</span>
+                        </div>
+                        <h3 class="project-title">Cinematic Trailer</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Sound-Driven Trailer Edit • Fast Paced Teaser Cut • Visual Beat Sync & Subtitles</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">After Effects</span>
+                            <span class="sw-tag">Sound Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Documentary Cut #1 -->
+                <div class="project-card" data-category="documentary">
+                    <div class="video-container">
+                        <iframe src="https://drive.google.com/file/d/1f7B59Oct3z7f9b0ZN-7H7r2xsKIVsXxF/preview" width="100%" height="450" allow="autoplay; encrypted-media" allowfullscreen title="Documentary Feature Cut #1"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Independent Feature Film</span>
+                        </div>
+                        <h3 class="project-title">Documentary Feature Cut #1</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Full Documentary Edit • Story Pacing • Audio Restoration</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">Adobe Audition</span>
+                            <span class="sw-tag">Color Grading</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Documentary Cut #2 -->
+                <div class="project-card" data-category="documentary">
+                    <div class="video-container">
+                        <iframe src="https://drive.google.com/file/d/1k59MyLDXzgZ1SnENnKYhsfX-EWzfDy1p/preview" width="100%" height="450" allow="autoplay; encrypted-media" allowfullscreen title="Documentary Feature Cut #2"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">DocuSeries / Broadcast News TV</span>
+                        </div>
+                        <h3 class="project-title">Documentary Feature Cut #2</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Interview Assembly • Multi-Cam Cut • Subtitles & Graphics</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">CapCut</span>
+                            <span class="sw-tag">Audio Sync</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Documentary Cut #3 -->
+                <div class="project-card" data-category="documentary">
+                    <div class="video-container">
+                        <iframe src="https://drive.google.com/file/d/1_-oEZD-aCDvdEcJXeX84_SooxctqmPQD/preview" width="100%" height="450" allow="autoplay; encrypted-media" allowfullscreen title="Documentary Feature Cut #3"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Culture & Heritage Doc</span>
+                        </div>
+                        <h3 class="project-title">Documentary Feature Cut #3</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Archival Footage Edit • Narrative Arc • Color & Sound Mix</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">FL Studio</span>
+                            <span class="sw-tag">Color Correction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Documentary Cut #4 -->
+                <div class="project-card" data-category="documentary">
+                    <div class="video-container">
+                        <iframe src="https://drive.google.com/file/d/10L827EDwJ5qrWZH4xmluSVKMJ0pPDv_h/preview" width="100%" height="450" allow="autoplay; encrypted-media" allowfullscreen title="Documentary Feature Cut #4"></iframe>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-meta-header">
+                            <span class="project-meta-type">Short Film & Documentary</span>
+                        </div>
+                        <h3 class="project-title">Documentary Feature Cut #4</h3>
+                        <div class="project-role-box">
+                            <span class="role-label">My Role</span>
+                            <span class="role-text">Final Master Edit • Color Grading • B-Roll Assembly</span>
+                        </div>
+                        <div class="software-tags">
+                            <span class="sw-tag">Premiere Pro</span>
+                            <span class="sw-tag">Adobe Audition</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Career History</div>
+                <h2>Professional Experience</h2>
+                <p>Over 5 years of experience delivering compelling video editing, story soundscapes, and TV ready production.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">PRESENT</div>
+                        <h3 class="timeline-role">Freelance Video Editor & Sound Designer</h3>
+                        <div class="timeline-company">Self Employed</div>
+                        <p class="timeline-desc">
+                            Edited documentaries, music videos, interviews, and short-form social media content. Responsible for sound design, audio synchronization, subtitle motion graphics, and final export.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">AUG 2025 - NOV 2025</div>
+                        <h3 class="timeline-role">Sound Designer</h3>
+                        <div class="timeline-company">Katha Ghar</div>
+                        <p class="timeline-desc">
+                            Sound design for Hindi audio stories. Focused on enhancing storytelling through emotionally driven soundscapes, creating clear, engaging, and well-balanced audio environments.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">APR 2024 - SEP 2024</div>
+                        <h3 class="timeline-role">Sound Engineer</h3>
+                        <div class="timeline-company">Pocket FM</div>
+                        <p class="timeline-desc">
+                            Designed immersive audio experiences for audiobooks and dramatic audio series. Collaborated with a UK-based sound design team to produce high-quality Foley and sound effects.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">NOV 2022 - JUN 2023</div>
+                        <h3 class="timeline-role">Video Editor & Sound Designer</h3>
+                        <div class="timeline-company">Shri Rawatpura Sarkar Official</div>
+                        <p class="timeline-desc">
+                            Edited documentaries, YouTube live sessions, reels, and PR interviews. Managed full sound design and high-quality mixing.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">JAN 2021 - OCT 2022</div>
+                        <h3 class="timeline-role">Video Editor</h3>
+                        <div class="timeline-company">Palpal India News TV</div>
+                        <p class="timeline-desc">
+                            Produced high-impact news broadcast video content with precision and quick turnaround times for TV ready broadcasts.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">NOV 2019 - OCT 2020</div>
+                        <h3 class="timeline-role">Video Editor</h3>
+                        <div class="timeline-company">The Lokniti Media Pvt Ltd</div>
+                        <p class="timeline-desc">
+                            Handled video shoots and editing for political election campaigns, crafting compelling visuals for social media distribution.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">FEB 2019 - OCT 2019</div>
+                        <h3 class="timeline-role">Montage Music Producer</h3>
+                        <div class="timeline-company">DNN News</div>
+                        <p class="timeline-desc">
+                            Produced news music montages elevating brand identity through tailored audio and seamless video editing integration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-year">2023 • DIPLOMA</div>
+                    <h4 class="edu-degree">Diploma in Music Production</h4>
+                    <div class="edu-school">AAFT (Asian Academy of Film & Television)</div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-year">2018 • DEGREE</div>
+                    <h4 class="edu-degree">B. Pharmacy</h4>
+                    <div class="edu-school">RGPV University</div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-year">2013 • SCHOOLING</div>
+                    <h4 class="edu-degree">Higher Secondary (12th)</h4>
+                    <div class="edu-school">JNV (Jawahar Navodaya Vidyalaya)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <div class="badge">Get In Touch</div>
+                    <h2>Let's Create Inspiring Sound & Visuals</h2>
+                    <p>Available for freelance sound design, audiobook audio engineering, podcast mixing, documentry editing, and promo projects.</p>
+
+                    <div class="contact-links">
+                        <a href="mailto:rajul.jnv@gmail.com" class="c-link-item">
+                            <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <span style="display: block; font-size: 0.8rem; color: var(--text-dim);">EMAIL ME</span>
+                                <strong>rajul.jnv@gmail.com</strong>
+                            </div>
+                        </a>
+
+                        <a href="tel:8839237568" class="c-link-item">
+                            <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span style="display: block; font-size: 0.8rem; color: var(--text-dim);">CALL / WHATSAPP</span>
+                                <strong>+91 8839237568</strong>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/rajul-barman-587a9a43" target="_blank" class="c-link-item">
+                            <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div>
+                                <span style="display: block; font-size: 0.8rem; color: var(--text-dim);">LINKEDIN PROFILE</span>
+                                <strong>linkedin.com/in/rajul-barman-587a9a43</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Project Type (e.g. Audio Drama, Sound Design)">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Tell me about your project details..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fa-solid fa-paper-plane"></i> Send Project Inquiry
+                    </button>
+                    <div id="formStatus" style="font-size: 0.9rem; color: var(--primary); text-align: center; display: none;">
+                        ✓ Message dispatched! Rajul will get back to you shortly.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Rajul Barman • Sound Designer, Music Producer & Video Editor Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Single Playback Controller Script -->
+    <script>
+        let audioCtx = null;
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+        }
+
+        // Auto Pause All Other Active Media Players When One Starts Playing
+        document.addEventListener('play', function(e){
+            const mediaElements = document.querySelectorAll('audio, video');
+            for(let i = 0; i < mediaElements.length; i++){
+                if(mediaElements[i] !== e.target){
+                    mediaElements[i].pause();
+                }
+            }
+        }, true);
+
+        function playSynthSound(type, btnElement) {
+            initAudio();
+            if (!audioCtx) return;
+
+            const now = audioCtx.currentTime;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            if (type === 'subdrop') {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(120, now);
+                osc.frequency.exponentialRampToValueAtTime(30, now + 0.8);
+                gain.gain.setValueAtTime(0.8, now);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.8);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start(now);
+                osc.stop(now + 0.8);
+            } 
+            else if (type === 'whoosh') {
+                const bufferSize = audioCtx.sampleRate * 0.5;
+                const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+                const data = buffer.getChannelData(0);
+                for (let i = 0; i < bufferSize; i++) {
+                    data[i] = Math.random() * 2 - 1;
+                }
+                const noise = audioCtx.createBufferSource();
+                noise.buffer = buffer;
+
+                const filter = audioCtx.createBiquadFilter();
+                filter.type = 'bandpass';
+                filter.frequency.setValueAtTime(200, now);
+                filter.frequency.exponentialRampToValueAtTime(3000, now + 0.25);
+                filter.frequency.exponentialRampToValueAtTime(300, now + 0.5);
+
+                gain.gain.setValueAtTime(0.01, now);
+                gain.gain.linearRampToValueAtTime(0.6, now + 0.25);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
+
+                noise.connect(filter);
+                filter.connect(gain);
+                gain.connect(audioCtx.destination);
+                noise.start(now);
+            } 
+            else if (type === 'uibeep') {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(1200, now);
+                osc.frequency.setValueAtTime(1800, now + 0.05);
+                gain.gain.setValueAtTime(0.2, now);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start(now);
+                osc.stop(now + 0.15);
+            }
+            else if (type === 'rain') {
+                const bufferSize = audioCtx.sampleRate * 2.0;
+                const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+                const data = buffer.getChannelData(0);
+                for (let i = 0; i < bufferSize; i++) {
+                    data[i] = Math.random() * 2 - 1;
+                }
+                const noise = audioCtx.createBufferSource();
+                noise.buffer = buffer;
+
+                const filter = audioCtx.createBiquadFilter();
+                filter.type = 'lowpass';
+                filter.frequency.setValueAtTime(800, now);
+                filter.frequency.linearRampToValueAtTime(1400, now + 1.0);
+                filter.frequency.linearRampToValueAtTime(600, now + 2.0);
+
+                gain.gain.setValueAtTime(0.01, now);
+                gain.gain.linearRampToValueAtTime(0.35, now + 0.3);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 2.0);
+
+                noise.connect(filter);
+                filter.connect(gain);
+                gain.connect(audioCtx.destination);
+                noise.start(now);
+            }
+            else if (type === 'glitch') {
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(800, now);
+                osc.frequency.setValueAtTime(150, now + 0.04);
+                osc.frequency.setValueAtTime(1200, now + 0.08);
+                osc.frequency.setValueAtTime(90, now + 0.12);
+
+                const dist = audioCtx.createWaveShaper();
+                const curve = new Float32Array(44100);
+                for (let i = 0; i < 44100; i++) {
+                    const x = (i * 2) / 44100 - 1;
+                    curve[i] = ((3 + 20) * x * 20 * (Math.PI / 180)) / (Math.PI + 20 * Math.abs(x));
+                }
+                dist.curve = curve;
+
+                gain.gain.setValueAtTime(0.4, now);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+
+                osc.connect(dist);
+                dist.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start(now);
+                osc.stop(now + 0.35);
+            }
+            else if (type === 'ambient') {
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(110, now);
+                const filter = audioCtx.createBiquadFilter();
+                filter.type = 'lowpass';
+                filter.frequency.setValueAtTime(400, now);
+                filter.frequency.linearRampToValueAtTime(1200, now + 1.2);
+                filter.frequency.linearRampToValueAtTime(400, now + 2.5);
+
+                gain.gain.setValueAtTime(0.01, now);
+                gain.gain.linearRampToValueAtTime(0.3, now + 1.0);
+                gain.gain.exponentialRampToValueAtTime(0.001, now + 2.5);
+
+                osc.connect(filter);
+                filter.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start(now);
+                osc.stop(now + 2.5);
+            }
+
+            if (btnElement) {
+                btnElement.classList.add('playing');
+                setTimeout(() => btnElement.classList.remove('playing'), 400);
+            }
+        }
+
+        function filterStories(category, event) {
+            const buttons = document.querySelectorAll('#stories .filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            if (event && event.target) event.target.classList.add('active');
+
+            const cards = document.querySelectorAll('#storiesGrid .project-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function filterVideos(category, event) {
+            const buttons = event ? event.target.parentElement.querySelectorAll('.filter-btn') : [];
+            buttons.forEach(btn => btn.classList.remove('active'));
+            if (event && event.target) event.target.classList.add('active');
+
+            const cards = document.querySelectorAll('#videoEditingGrid .project-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const status = document.getElementById('formStatus');
+            status.style.display = 'block';
+            playSynthSound('uibeep');
+            setTimeout(() => {
+                e.target.reset();
+            }, 1000);
+        }
+
+        // Hero Canvas Spectrum Visualizer Animation
+        const canvas = document.getElementById('heroCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            if (canvas && canvas.parentElement) {
+                canvas.width = canvas.parentElement.clientWidth - 48;
+                canvas.height = 220;
+            }
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        let phase = 0;
+
+        function renderVisualizer() {
+            if (!canvas || !ctx) return;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const numBars = 36;
+            const barWidth = (canvas.width / numBars) - 4;
+            
+            for (let i = 0; i < numBars; i++) {
+                const heightMultiplier = Math.sin(phase + i * 0.25) * 0.4 + 0.6;
+                const barHeight = heightMultiplier * (canvas.height * 0.65) * (0.3 + Math.random() * 0.15);
+                const x = i * (barWidth + 4) + 2;
+                const y = canvas.height - barHeight - 20;
+
+                const gradient = ctx.createLinearGradient(0, y, 0, canvas.height);
+                gradient.addColorStop(0, '#00f2fe');
+                gradient.addColorStop(0.5, '#7f00ff');
+                gradient.addColorStop(1, 'rgba(0, 242, 254, 0.05)');
+
+                ctx.fillStyle = gradient;
+                ctx.beginPath();
+                if (ctx.roundRect) {
+                    ctx.roundRect(x, y, barWidth, barHeight, [4, 4, 0, 0]);
+                } else {
+                    ctx.rect(x, y, barWidth, barHeight);
+                }
+                ctx.fill();
+            }
+
+            ctx.beginPath();
+            ctx.strokeStyle = '#00f2fe';
+            ctx.lineWidth = 2;
+            for (let x = 0; x < canvas.width; x += 4) {
+                const y = Math.sin(x * 0.02 + phase * 2) * 20 + (canvas.height / 2) - 10;
+                if (x === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+
+            phase += 0.04;
+            requestAnimationFrame(renderVisualizer);
+        }
+        renderVisualizer();
+    </script>
+</body>
+</html>
